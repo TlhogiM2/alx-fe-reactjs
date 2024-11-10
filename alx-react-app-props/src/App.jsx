@@ -6,6 +6,8 @@ import WelcomeMessage from './components/WelcomeMessage';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
+import React, { useContext } from 'react';
+import UserContext from '../UserContext';
 import UserProfile from './components/UserProfile';
 import ProfilePage from './ProfilePage';
 import UserContext from './UserContext';
