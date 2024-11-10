@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <Header />
       <WelcomeMessage />
+      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
       <MainContent />
       <Footer />
 
