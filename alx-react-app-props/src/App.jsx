@@ -14,27 +14,25 @@ function App() {
   const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
   return (
-    <UserContext.Provider value={userData}>
-      <ProfilePage />
-    </UserContext.Provider>
+    <div className="App">
+      <UserContext.Provider value={userData}>
+        <Header />
+        <WelcomeMessage />
+        <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+        <MainContent />
+        <ProfilePage />
+        <Footer />
+        <CounterSection />
+      </UserContext.Provider>
+    </div>
   );
 }
 
-export default App;
-
-
-
-function App() {
+function CounterSection() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
-      <Header />
-      <WelcomeMessage />
-      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
-      <MainContent />
-      <Footer />
-
+    <div>
       <div>
         <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -43,7 +41,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      
+
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
