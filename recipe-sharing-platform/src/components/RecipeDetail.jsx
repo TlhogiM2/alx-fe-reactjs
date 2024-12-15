@@ -39,6 +39,10 @@ const RecipeDetail = () => {
                 </ol>
             </div>
         </div>
+        <div className="bg-white shadow-lg rounded-lg p-4">
+    {/* Content here */}
+</div>
+
     );
 };
 
